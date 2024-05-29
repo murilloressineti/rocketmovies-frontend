@@ -12,6 +12,10 @@ export const Header = styled.div`
   align-items: center;
 
   padding: 0 12.4rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem 2rem;
+  }
 `;
 
 export const Form = styled.form`
@@ -24,6 +28,19 @@ export const Form = styled.form`
 
   input {
     height: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 25rem;
+
+    input {
+    height: 5rem;
+    font-size: 1.4rem;
+  }
+
+    button {
+      height: 5rem;
+    }
   }
 `;
 

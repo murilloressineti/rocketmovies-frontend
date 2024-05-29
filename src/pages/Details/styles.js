@@ -29,6 +29,16 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.COLORS.PINK};
     border-radius: 1rem;
   }
+
+  @media (max-width: 768px) {
+    input {
+      font-size: 1.4rem;
+    }
+
+    main {
+      padding: 4rem 2rem;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -120,6 +130,14 @@ export const Content = styled.div`
       display: flex;
       flex-direction: row;
       gap: 4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    max-width: 80vw;
+
+    textarea {
+      max-width: 80vw;
     }
   }
 `;

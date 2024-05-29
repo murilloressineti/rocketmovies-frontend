@@ -27,6 +27,12 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.COLORS.PINK};
     border-radius: 1rem;
   }
+
+  @media (max-width: 768px) {
+    input {
+      font-size: 1.4rem;
+    }
+  }
 `;
 
 export const Title = styled.div`
@@ -36,8 +42,13 @@ export const Title = styled.div`
 
   padding: 2rem 12.5rem;
 
-  button {
-    width: 22rem;
+  @media (max-width: 768px) {
+    padding: 2rem 2.5rem;
+    font-size: 1.4rem;
+
+    button {
+      width: 20rem;
+    }
   }
 `;
 
@@ -56,5 +67,9 @@ export const Content = styled.div`
   span:hover {
     filter: brightness(0.9);
     transition: filter 300ms;
+  }
+
+  @media (max-width: 768px) {
+    width: 90vw;
   }
 `;

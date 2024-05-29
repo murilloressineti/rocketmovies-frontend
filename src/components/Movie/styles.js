@@ -10,6 +10,10 @@ export const Container = styled.button`
   border: none;
   border-radius: 1.6rem;
 
+  @media (max-width: 768px) {
+    min-width: 90vw;
+    }
+
   h1 {
     text-align: left;
 

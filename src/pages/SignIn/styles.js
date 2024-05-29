@@ -6,6 +6,12 @@ export const Container = styled.div`
 
   display: flex;
   align-items: stretch;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Form = styled.form`
@@ -42,10 +48,38 @@ export const Form = styled.form`
     color: ${({ theme }) => theme.COLORS.PINK};
     text-align: center;
   }
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+
+    > h1 {
+      font-size: 3.2rem;
+    }
+
+    > h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    > p {
+      font-size: 1.2rem;
+    }
+
+    > a {
+      margin-top: 2rem;
+    }
+  }
 `;
 
 export const Background = styled.div`
   flex: 1;
   background: url(${backgroundImg}) no-repeat center center;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;

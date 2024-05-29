@@ -16,6 +16,10 @@ export const Container = styled.header`
   justify-content: space-between;
 
   padding: 0 12rem;
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const Brand = styled(Link)`
@@ -29,6 +33,10 @@ export const Search = styled.div`
   align-items: center;
   padding: 0 6.4rem;
   flex-grow: 1;
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
 `;
 
 export const Profile = styled.div`
@@ -40,6 +48,11 @@ export const Profile = styled.div`
     height: 5.6rem;
     border-radius: 50%;
     border: 0.1rem solid ${({ theme }) => theme.COLORS.GRAY_500};
+
+    @media (max-width: 768px) {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
   }
 
   > div {
@@ -48,6 +61,12 @@ export const Profile = styled.div`
     align-items: end;
     margin-right: 1rem;
     line-height: 2.4rem;
+
+    @media (max-width: 768px) {
+      strong {
+        display: none;
+      }
+    }
 
     span {
       font-size: 1.4rem;

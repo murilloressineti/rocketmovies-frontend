@@ -50,6 +50,16 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.COLORS.PINK};
     border-radius: 1rem;
   }
+
+  @media (max-width: 768px) {
+    input, textarea {
+      font-size: 1.4rem;
+    }
+
+    main {
+      padding: 0 2rem;
+    }
+  }
 `;
 
 export const Form = styled.form`
@@ -66,6 +76,12 @@ export const Form = styled.form`
     h1 {
       font-size: 3.6rem;
       color: ${({ theme }) => theme.COLORS.GRAY_100};
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1{
+      font-size: 1.4rem;
     }
   }
 `;
